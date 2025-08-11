@@ -1,66 +1,67 @@
-![Linguagem](https://img.shields.io/badge/Linguagem-C-blue.svg)
-![Plataforma](https://img.shields.io/badge/Plataforma-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
+![Language](https://img.shields.io/badge/Language-C-blue.svg)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
 
-# Arquitetura de Computadores - UFC 🎓
+# Computer Architecture - UFC 🎓
 
-Este repositório contém as atividades práticas desenvolvidas na disciplina de **Arquitetura de Computadores** na Universidade Federal do Ceará (UFC), com foco na simulação de componentes de hardware em baixo nível utilizando a linguagem C.
-
----
-
-### 📖 Sobre o Projeto
-
-O objetivo principal destes projetos é solidificar o entendimento teórico da arquitetura de computadores através da implementação prática. Ao construir simuladores para componentes fundamentais como a Unidade Lógica e Aritmética (ULA), é possível visualizar e depurar o fluxo de dados e as operações a nível de bits, compreendendo desafios como overflow, underflow e a representação de números inteiros e de ponto flutuante.
+This repository contains the practical assignments developed for the **Computer Architecture** course at the Federal University of Ceará (UFC), focusing on the simulation of low-level hardware components using the C language.
 
 ---
 
-### 🚀 Projetos Desenvolvidos
+### 📖 About the Project
 
-✅ **Simulador de ULA para Aritmética de Inteiros (8 bits)**
-* Implementação de uma ULA de 8 bits capaz de realizar as quatro operações aritméticas básicas (soma, subtração, multiplicação e divisão) para inteiros com sinal, utilizando a representação em complemento de dois.
-* Inclui detecção de overflow.
-
-✅ **Simulador de ULA para Aritmética de Ponto Flutuante (Padrão IEEE 754)**
-* Simulador que implementa as quatro operações aritméticas para números de ponto flutuante de 32 bits, seguindo os algoritmos baseados no padrão IEEE 754.
-* Inclui detecção de overflow e underflow de expoente.
+The main goal of these projects is to solidify the theoretical understanding of computer architecture through practical implementation. By building simulators for fundamental components like the Arithmetic Logic Unit (ALU), it is possible to visualize and debug the data flow and bit-level operations, understanding challenges such as overflow, underflow, and the representation of integer and floating-point numbers.
 
 ---
 
-### 💻 Tecnologias e Conceitos
+### 🚀 Projects Developed
 
-* **Linguagem:** C
-* **Conceitos Principais:** Manipulação de bits, representação de dados (complemento de dois, IEEE 754), lógica de circuitos, organização de processadores e simulação de hardware.
-* **Compilador:** GCC (MinGW no Windows)
+✅ **ALU Simulator for Integer Arithmetic (8-bit)**
+* Implementation of an 8-bit ALU capable of performing the four basic arithmetic operations (addition, subtraction, multiplication, and division) for signed integers using two's complement representation.
+* Includes overflow detection.
+
+✅ **ALU Simulator for Floating-Point Arithmetic (IEEE 754 Standard)**
+* Simulator that implements the four arithmetic operations for 32-bit floating-point numbers, following the algorithms based on the IEEE 754 standard.
+* Includes exponent overflow and underflow detection.
 
 ---
 
-### ⚙️ Como Executar
+### 💻 Technologies and Concepts
 
-Para compilar e executar os simuladores, siga os passos abaixo.
+* **Language:** C
+* **Key Concepts:** Bit manipulation, data representation (two's complement, IEEE 754), circuit logic, processor organization, and hardware simulation.
+* **Compiler:** GCC (MinGW on Windows)
 
-1.  **Clone o repositório:**
+---
+
+### ⚙️ How to Run
+
+To compile and run the simulators, follow the steps below.
+
+1.  **Clone the repository:**
     ```bash
-    git clone (https://github.com/NicolasHarnisch/Atividades-ARQ-UFC.git)
+    git clone https://github.com/NicolasHarnisch/Activities-ARQ-UFC.git
     ```
 
-2.  **Navegue até a pasta de um dos projetos:**
+2.  **Navigate to one of the project folders:**
     ```bash
-    cd Atividades-ARQ-UFC/NomeDaPastaDoProjeto
+    # Example for the Integer ALU project
+    cd Activities-ARQ-UFC/Integer-ALU-Project
     ```
 
-3.  **Compile os arquivos C:**
-    O comando abaixo junta o programa principal (`main.c`) com a lógica da ULA (`ULA.c`) e cria um executável.
+3.  **Compile the C files:**
+    The command below links the main program (`main.c`) with the ALU logic (`ULA.c`) and creates an executable.
     ```bash
-    gcc main.c ULA.c -o simulador.exe
+    gcc main.c ULA.c -o simulator.exe
     ```
 
-4.  **Execute o simulador:**
-    O programa irá ler os dados de entrada do arquivo `dados.txt` ou `operandos.txt`.
+4.  **Run the simulator:**
+    The program will read input data from the corresponding file (`dados.txt` or `operandos.txt`).
     ```bash
-    ./simulador.exe
+    ./simulator.exe
     ```
 
 ---
 
-### 📩 Contato
+### 📩 Contact
 
-Caso tenha sugestões ou dúvidas, fique à vontade para abrir uma [*issue*](https://github.com/NicolasHarnisch/Atividades-ARQ-UFC/issues/new) ou entrar em contato!
+If you have any suggestions or questions, feel free to open an [*issue*](https://github.com/NicolasHarnisch/Activities-ARQ-UFC.git) or get in touch!
